@@ -1,10 +1,10 @@
 {
-    "name": "revosystems/thrust",
+    "name": "triswan/thrust",
     "description": "A simple resource crud generator",
     "type": "library",
     "require": {
-        "php": "^8.0",
-        "laravel/framework": "8.x|9.x",
+        "php": "^8.2",
+        "laravel/framework": "8.x|9.x|10.x|11.x",
         "intervention/image": "^2.5",
         "psr/container": "^1.0|^2.0",
         "illuminate/contracts": "8.x|^9.43"
