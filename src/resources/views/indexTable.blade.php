@@ -24,7 +24,7 @@
                     <td class="sort action hide-mobile"></td>
                 @endif
                 @foreach($fields as $field)
-                    <td class="{{$field->rowClass}}" data-title="{{ $field->getDatabaseField() }}" >
+                    <td class="{{$field->rowClass}}" data-title="{{ $field->getTitle() }}" >
                         @if (! $field->shouldHide($row, 'index') && $field->shouldShow($row, 'index') && $resource->can($field->policyAction, $row))
                             {!! $field->displayInIndex($row) !!}
                         @endif
