@@ -69,7 +69,7 @@ class Text extends Field
         if (! $object) {
             return null;
         }
-        return htmlspecialchars(parent::getValue($object));
+        return htmlspecialchars(parent::getValue($object) ?? '');
     }
 
     public function allowScripts()

@@ -33,7 +33,7 @@ class TextArea extends Field
 
     public function getValue($object)
     {
-        return htmlspecialchars($object->{$this->field});
+        return htmlspecialchars($object->{$this->field} ?? '');
     }
 
 

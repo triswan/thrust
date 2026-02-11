@@ -73,7 +73,7 @@ class Link extends Field
         if ($this->route) {
             return route($this->route, [$object]);
         }
-        return str_replace('{field}', $this->getValue($object), $this->link);
+        return str_replace('{field}', $this->getValue($object) ?? '', $this->link);
     }
 
     public function displayInEdit($object, $inline = false)

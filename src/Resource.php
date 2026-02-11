@@ -243,7 +243,7 @@ abstract class Resource
             });
         }
         return $fields->mapWithKeys(function ($field) use ($objectId) {
-            return [$field->field => str_replace('{id}', $objectId, $field->validationRules)];
+            return [$field->field => str_replace('{id}', $objectId ?? '', $field->validationRules)];
         })->filter(function ($value) {
             return $value != null;
         })->toArray();
